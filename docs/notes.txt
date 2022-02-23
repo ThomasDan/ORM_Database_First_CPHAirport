@@ -1,0 +1,17 @@
+Airports
+-IATA (ID) "CPH" PK
+-Name "Kastrup Lufthavn"
+
+Routes
+-ID PK
+-OwnerCompany "SAS"
+-AirportA "CPH"
+-AirportB "AAL"
+
+
+Companies
+-Name "SAS" PK
+
+OtherRoutesOperated
+-Company "SAS"
+-Route
