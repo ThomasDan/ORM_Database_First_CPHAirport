@@ -73,9 +73,15 @@
     <Compile Include="Company.cs">
       <DependentUpon>Airport.tt</DependentUpon>
     </Compile>
+    <Compile Include="dal\AirportCRUDHandler.cs" />
+    <Compile Include="dal\CompanyCRUDHandler.cs" />
+    <Compile Include="dal\RouteCRUDHandler.cs" />
+    <Compile Include="dal\RouteLeasingCRUDHandler.cs" />
     <Compile Include="FlightRoute.cs">
       <DependentUpon>Airport.tt</DependentUpon>
     </Compile>
+    <Compile Include="logic\AirportCRUDLogic.cs" />
+    <Compile Include="logic\ViewInteractionProcessor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sp_helpdiagramdefinition_Result.cs">
@@ -87,6 +93,8 @@
     <Compile Include="sysdiagram.cs">
       <DependentUpon>Airport.tt</DependentUpon>
     </Compile>
+    <Compile Include="view\InputAcquirer.cs" />
+    <Compile Include="view\Outputter.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="Airport.edmx">
@@ -114,5 +122,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -39,7 +39,6 @@ INSERT INTO OtherRouteOperated (companyID, flightRoute_airport_fk) VALUES
 	(3, 'AAL'),
 	(4, 'BEA'),
 	(4, 'LAX'),	
-	(4, 'BRA'),
 	(5, 'BIA'),
-	(5, 'MCA'),
+	(5, 'BEA'),
 	(5, 'OSL')
