@@ -8,6 +8,7 @@ namespace ORM_Database_First_CPHAirport.view
 {
     internal class InputAcquirer
     {
+        // Probably not super correct to have an outputter in the inputter, but it's too damned convenient
         private Outputter outputter = new Outputter();
 
         /// <summary>
@@ -16,8 +17,6 @@ namespace ORM_Database_First_CPHAirport.view
         /// <returns>Single digit integer</returns>
         internal int AcquireValidInteger()
         {
-            
-
             int output = 99;
             bool validInt = false;
             while (!validInt)
@@ -31,10 +30,15 @@ namespace ORM_Database_First_CPHAirport.view
                     outputter.WriteColoredMessage("\nInvalid Key! Must be a number; 0-9!", ConsoleColor.Red);
                 }
             }
-
             return output;
         }
 
+        /// <summary>
+        /// Acquires a string of a definable character length from console.readline()
+        /// </summary>
+        /// <param name="min">Minimum length, 0 per default</param>
+        /// <param name="max">Maximum length, 10k per default</param>
+        /// <returns></returns>
         internal string AcquireStringOfLength(int min = 0, int max = 10000)
         {
             string output = "";
